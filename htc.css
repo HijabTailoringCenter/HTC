@@ -41,12 +41,17 @@
     z-index:1000;
     height: 80px;
     display:flex;
+    flex-wrap: wrap;
     align-items:center;
     justify-content:space-between;
     padding: 10px 18px;
     background: rgba(255,255,255, 0.2);
     border-bottom: 2px solid rgba(184, 139, 74, 1.0);
     backdrop-filter: blur(12px);
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
   }
   
   /* NavBar : Left side -- Logo & Name */
@@ -170,7 +175,7 @@
   
   /* Responsive Design for small screens */
   @media (max-width: 820px) {
-    .hamburger{ display:block; }   /* NavBar Buttons convert into Hamburger design (only on small screens) */
+    .hamburger{ display:block;  font-size: 15px; }   /* NavBar Buttons convert into Hamburger design (only on small screens) */
     .nav-links{                    /* NavBar Buttons convet into drop-down list (only on small screens) */
       position: absolute;
       right: 12px;
@@ -185,8 +190,9 @@
       min-width: 160px;
     }
     .nav-links.show{ display:flex; }     /* NavBar Buttons show-up, when hamburger is clicked (only on small screens) */
-    .shop-name{ font-size:1.2rem; }     /* Shop name become slightly smaller on small screens */
-    .shop-name span { font-size: 1.3rem;}
+    .shop-name{ font-size:0.9rem; }     /* Shop name become slightly smaller on small screens */
+    .shop-name span { font-size: 0.9rem;}
+    .logo-icon { width: 40px;  height: 40px;}
   }
   
 
@@ -1040,3 +1046,4 @@
   #scrollTopBtn:hover {
     background-color: #333;
   }
+
