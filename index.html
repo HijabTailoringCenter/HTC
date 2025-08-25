@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hijab Tailoring Center</title>
+    <link rel="stylesheet" href="htc.css">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+
+<body>
+
+
+
+    <!-- NAVBAR -->
+    <!-- Left side : Name & Logo --> 
+    <header class="navbar">
+        <div class="left">
+            <div class="logo-wrapper">
+                <img class="logo-icon" src="NavBar/logo.png" alt="Tailoring Icon">
+                <span class="shop-name"> 
+                    <span>H</span>    <span>T</span>    <span>C</span>
+                    &nbsp; | &nbsp;           <div style="color: black;">✂</div> Hijab Tailoring Center
+                </span>
+            </div>
+        </div>
+    <!-- Right side : Navigation Buttons --> 
+        <nav class="nav-right">
+            <button id="menuBtn" class="hamburger" aria-label="Toggle menu">☰</button>
+            <ul id="navLinks" class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#developer">Developer</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <!-- Hero Section -->
+    <div id="particles-js"></div>
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <!-- Left side : Text -->
+            <div class="text-area">
+                <h1 class="brand-name">Hijab Tailoring Center</h1>
+                <p class="tagline">Sewing your clothes with love, care & a touch of perfection</p>
+                <div class="buttons">
+                    <button class="btn primary-btn" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'});"> Contact Us </button>
+                    <button class="btn secondary-btn" onclick="document.getElementById('services').scrollIntoView({behavior: 'smooth'});">View Designs</button>
+                </div>
+            </div>
+            <!-- Right side : Image -->
+            <div class="logo-area">
+                <img src="Hero/banner.png" alt="Hijab Tailoring Center Logo" class="logo-img" />
+            </div>
+        </div>
+    </section> <br>
+
+
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <h2>About Us</h2>
+        <div class="about-container">
+            <!-- Text : Left -->
+            <div class="about-text">
+                <h2>About <span>Hijab Tailoring Center</span></h2>
+                <div class="owner">
+                    <img src="About/mudassar.jpg" alt="mudassar">
+                    <p>
+                        Assalam-o-alaikum! I am <i style="font-size: 150%; font-weight: bolder;">Mudassar Hussain</i>
+                        the owner of <mark style="font-weight:bold;">Hijab Tailoring Center</mark> .
+                    </p>
+                </div> <br>
+                <p> 
+                    At HTC, we stitch clothes with care, style, and comfort in mind.
+                    We make         <span id="changing-words"></span>
+                    for all occasions. Our skilled tailors ensure perfect fitting & neat finishing. Whether you want simple daily wear 
+                    or stylish party dresses, we are here to design for you.  <br>   <i>Don't worry ! </i> 😄 😄 😄
+                </p>
+                <p>
+                    Every stitch tells a story of care, detail, and dedication. Whether you want a custom design or alterations 
+                    for the perfect fit, our expert tailoring ensures you always look and feel your best.
+                </p>
+                <a href="#contact" class="btn-about">Contact Us</a>
+            </div>
+            <!-- Image : Right -->
+            <div class="about-images">
+                <div class="img-box img1"><img src="About/lehnga.jpeg" alt="Hijab Design"></div>
+                <div class="img-box img2"><img src="About/lehnga.jpeg" alt="Tailoring"></div>
+                <div class="img-box img3"><img src="About/lehnga.jpeg" alt="Fabric"></div>
+                <div class="img-box img4"><img src="About/lehnga.jpeg" alt="Saree"></div>
+            </div>
+        </div>
+    </section>
+      
+
+
+    <!-- Gallery Section -->
+    <div id="gallery" class="slider">
+        <h2>Gallery</h2>
+        <div class="slider-track" id="sliderTrack">
+            <img src="Gallery/1.jpeg" alt="1">
+            <img src="Gallery/2.jpeg" alt="2">
+            <img src="Gallery/3.jpeg" alt="3">
+            <img src="Gallery/4.jpeg" alt="4">
+            <img src="Gallery/5.jpeg" alt="5">
+            <img src="Gallery/6.jpeg" alt="6">
+            <img src="Gallery/7.jpeg" alt="7">
+            <img src="Gallery/8.jpeg" alt="8">
+            <img src="Gallery/9.jpeg" alt="9">
+            <img src="Gallery/10.jpeg" alt="10">
+            <img src="Gallery/11.jpeg" alt="11">
+        </div>
+    </div>
+
+      
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <p class="tagline">Crafted with Care, Tailored for You</p>
+            <div class="service-grid">
+                <div class="service-card">
+                    <img src="Services/lehnga.jpeg" alt="Custom Hijab Stitching">
+                    <h3>Custom Hijab Stitching</h3>
+                    <p>Perfectly tailored hijabs to match your style and comfort.</p>
+                    <a href="custom-hijab.html" class="btn">See Designs</a>
+                </div>
+                <div class="service-card">
+                    <img src="Services/lehnga.jpeg" alt="Alterations & Repairs">
+                    <h3>Alterations & Repairs</h3>
+                    <p>Professional adjustments for a flawless fit every time.</p>
+                    <a href="custom-hijab.html" class="btn">See Designs</a>
+                </div>
+                <div class="service-card">
+                    <img src="Services/lehnga.jpeg" alt="Dress Designing">
+                    <h3>Dress Designing</h3>
+                    <p>Elegant and modest dresses for every occasion.</p>
+                    <a href="custom-hijab.html" class="btn">See Designs</a>
+                </div>
+                <div class="service-card">
+                    <img src="Services/lehnga.jpeg" alt="Dress Designing">
+                    <h3>Dress Designing</h3>
+                    <p>Elegant and modest dresses for every occasion.</p>
+                    <a href="custom-hijab.html" class="btn">See Designs</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2 class="contact-h2">Contact Us</h2>
+        <div class="contact-card">
+            <!-- Left half -->
+            <div class="contact-left">
+                <h2>Visit Us</h2> <br>
+                <p><strong>Address:</strong><br><i>Near Gourmet Bakery, Manchar Road, Main Street People's Colony, Ali Pur Chatha</i></p>
+                <p><strong>Working Hours:</strong><br>Sat - Thu: 09:00 AM - 09:00 PM<br>Friday: Closed</p>
+            </div>
+            <!-- Right half -->
+            <div class="contact-right">
+                <h2> ☎️ Call Us </h2> <br>
+                <div>
+                    <a href="tel:+923001234567"> 📞 +92 300 1234567 </a>
+                </div>
+                <div>
+                    <a href="tel:+923001112233"> 📞 +92 300 1112233 </a>
+                </div> <br>
+                <div>
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" width="28">
+                    <a href="https://facebook.com" target="_blank"> &nbsp; Facebook</a>
+                </div>
+                <div>
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" width="28">
+                    <a href="https://wa.me/923001234567" target="_blank"> &nbsp; WhatsApp</a>
+                </div>
+            </div>
+
+        </div>
+        <!-- Floating WhatsApp Button -->
+        <a href="https://wa.me/923001234567" class="whatsapp-float" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+        </a>
+        <!-- Google Map -->
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4538.926062662882!2d73.81663821510014!3d32.26877493804142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2s!4v1755349787862!5m2!1sen!2s" 
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+      
+
+    <!-- Developer Section -->
+    <section id="developer" class="developer">
+        <div class="container">
+            <div class="dev-card">
+                <!-- Left: Profile Picture -->
+                <div class="dev-img">
+                    <img src="Developer/haroon.jpg" alt="Hani">
+                </div>
+                <!-- Right: Info -->
+                <div class="dev-info">
+                    <h2>Muhammad Haroon Arshad</h2>
+                    <h4>Web Developer | Computer Science Student</h4>
+                    <p> I’m a passionate Computer Science student & web developer, exploring new technologies and building creative digital experiences. </p>
+  
+                    <!-- Contact details -->
+                    <p><strong>Email:</strong> HaroonArshad16@gmail.com</p>
+                    <p><strong>Phone:</strong> +92-322-7433251</p>
+  
+                    <!-- Social Links -->
+                    <div class="dev-socials">
+                        <a href="https://github.com/yourusername" target="_blank"> <u>GitHub</u> </a>
+                        <a href="https://linkedin.com/in/yourusername" target="_blank"> <u>Facebook</u> </a>
+                        <a href="https://wa.me/923001234567" target="_blank"> <u>Whatsapp</u> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Column 1: Navigation -->
+            <div class="footer-col">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#developer">Developer</a></li>
+                </ul>
+            </div>
+            <!-- Column 2: Designs Links -->
+            <div class="footer-col">
+                <h3>Our Designs</h3>
+                <ul>
+                    <li><a href="#">Men's Suits</a></li>
+                    <li><a href="#">Women's Suits</a></li>
+                    <li><a href="#">Wedding Collection</a></li>
+                    <li><a href="#">Casual Wear</a></li>
+                    <li><a href="#">Special Designs</a></li>
+                </ul>
+            </div>
+            <!-- Column 3: Copyright -->
+            <div class="footer-col footer-right">
+                <h3>Stay Connected</h3>
+                <p>Follow us on social media for latest updates.</p>
+                <p class="copyright">&copy; 2025 HTC. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+  
+
+
+    <!-- Scroll to Top Button -->
+    <button onclick="topFunction()" id="scrollTopBtn" title="Go to top"> ↑ </button>
+
+
+
+    <script src="htc.js"></script>
+
+
+    
+</body>
+</html>
