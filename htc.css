@@ -510,6 +510,7 @@
   }
   #changing-words {
     font-size: 1.2rem;
+    width: 130px;
   }
   .about-images {
     grid-template-columns: repeat(2, 1fr);
@@ -762,7 +763,7 @@
   /* Contact : Right half - Numbers links, when hover */
   .contact-right a:hover {
     text-decoration: underline;
-    font-weight: bold;
+    color: #e1a74f;
   }
   
   /* Contact : WhatsApp border */
@@ -1046,5 +1047,6 @@
   #scrollTopBtn:hover {
     background-color: #333;
   }
+
 
 
