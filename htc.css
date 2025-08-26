@@ -50,7 +50,6 @@
     backdrop-filter: blur(12px);
     width: 100%;
     max-width: 100%;
-    overflow-x: hidden;
     box-sizing: border-box;
   }
   
@@ -179,7 +178,7 @@
     .nav-links{                    /* NavBar Buttons convet into drop-down list (only on small screens) */
       position: absolute;
       right: 12px;
-      top: calc(66px + 8px);
+      top: 100%;
       background: #fff8f2;
       padding: 10px 12px;
       border-radius: 10px;
@@ -188,6 +187,7 @@
       gap: 8px;
       display: none;
       min-width: 160px;
+      z-index: 9999;
     }
     .nav-links.show{ display:flex; }     /* NavBar Buttons show-up, when hamburger is clicked (only on small screens) */
     .shop-name{ font-size:0.9rem; }     /* Shop name become slightly smaller on small screens */
@@ -324,7 +324,7 @@
   .tagline {
     font-size: 1rem;   }
   .logo-img {
-    max-width: 250px;     /* Smaller logo */   }
+    max-width: 300px;     /* Smaller logo */   }
   .buttons .btn {
     width: 100%;                /* Buttons full-width on mobile */
     max-width: 280px;   }
@@ -388,7 +388,7 @@
   }
   .owner img {
     width: 100px;
-    height: auto;
+    height: 120px;
     border-radius: 10px;
   }
   .owner p {
@@ -541,7 +541,7 @@
   /* Gallery : Placing & sliding images, on a horizontal line */
   .slider-track {
     display: inline-flex;
-    animation: scrollGallery 20s linear infinite;    /* Sliding animation */
+    animation: scrollGallery 10s linear infinite;    /* Sliding animation */
   }
   
   /* Gallery : For each image */
@@ -837,7 +837,7 @@
     text-align: center;
   }
   .contact-right a {
-    font-size: 18px;
+    font-size: 14px;
     margin: 6px 0;
   }
   .map iframe {
@@ -1046,4 +1046,5 @@
   #scrollTopBtn:hover {
     background-color: #333;
   }
+
 
